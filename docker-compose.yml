@@ -1,0 +1,8 @@
+services:
+  judge:
+    image: judge  
+    privileged: true
+    volumes:
+      - .:/code
+    ports:
+      - "3000:3000"
